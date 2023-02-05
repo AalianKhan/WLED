@@ -351,7 +351,7 @@ WLED_GLOBAL NodesMap Nodes;
 WLED_GLOBAL bool nodeListEnabled _INIT(true);
 WLED_GLOBAL bool nodeBroadcastEnabled _INIT(true);
 
-WLED_GLOBAL byte buttonType[WLED_MAX_BUTTONS]  _INIT({BTN_TYPE_PUSH});
+WLED_GLOBAL byte buttonType[WLED_MAX_BUTTONS]  _INIT({BTN_TYPE_PUSH_ACT_HIGH});
 #if defined(IRTYPE) && defined(IRPIN)
 WLED_GLOBAL byte irEnabled      _INIT(IRTYPE); // Infrared receiver
 #else
